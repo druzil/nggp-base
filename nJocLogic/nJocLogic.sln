@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nJocLogic", "nJocLogic.csproj", "{72815ABC-166F-43BF-B7FA-8B2E10816A1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nJocTest", "..\nJocTest\nJocTest.csproj", "{5AB5F38A-C5BB-4DD9-9392-0A10F92A6C6B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{31BE519A-E9C8-4CC8-913A-9762531BB899}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		nJocLogic.vsmdi = nJocLogic.vsmdi
+		Performance1.psess = Performance1.psess
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nGamer", "..\nGamer\nGamer.csproj", "{D93F0B73-7368-4311-9326-CF25E135D996}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72815ABC-166F-43BF-B7FA-8B2E10816A1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72815ABC-166F-43BF-B7FA-8B2E10816A1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72815ABC-166F-43BF-B7FA-8B2E10816A1D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{72815ABC-166F-43BF-B7FA-8B2E10816A1D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{72815ABC-166F-43BF-B7FA-8B2E10816A1D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{72815ABC-166F-43BF-B7FA-8B2E10816A1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72815ABC-166F-43BF-B7FA-8B2E10816A1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72815ABC-166F-43BF-B7FA-8B2E10816A1D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{72815ABC-166F-43BF-B7FA-8B2E10816A1D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{72815ABC-166F-43BF-B7FA-8B2E10816A1D}.Release|x86.ActiveCfg = Release|Any CPU
+		{5AB5F38A-C5BB-4DD9-9392-0A10F92A6C6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AB5F38A-C5BB-4DD9-9392-0A10F92A6C6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AB5F38A-C5BB-4DD9-9392-0A10F92A6C6B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5AB5F38A-C5BB-4DD9-9392-0A10F92A6C6B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5AB5F38A-C5BB-4DD9-9392-0A10F92A6C6B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5AB5F38A-C5BB-4DD9-9392-0A10F92A6C6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AB5F38A-C5BB-4DD9-9392-0A10F92A6C6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AB5F38A-C5BB-4DD9-9392-0A10F92A6C6B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5AB5F38A-C5BB-4DD9-9392-0A10F92A6C6B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5AB5F38A-C5BB-4DD9-9392-0A10F92A6C6B}.Release|x86.ActiveCfg = Release|Any CPU
+		{D93F0B73-7368-4311-9326-CF25E135D996}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{D93F0B73-7368-4311-9326-CF25E135D996}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{D93F0B73-7368-4311-9326-CF25E135D996}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{D93F0B73-7368-4311-9326-CF25E135D996}.Debug|x86.ActiveCfg = Debug|x86
+		{D93F0B73-7368-4311-9326-CF25E135D996}.Debug|x86.Build.0 = Debug|x86
+		{D93F0B73-7368-4311-9326-CF25E135D996}.Release|Any CPU.ActiveCfg = Release|x86
+		{D93F0B73-7368-4311-9326-CF25E135D996}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{D93F0B73-7368-4311-9326-CF25E135D996}.Release|Mixed Platforms.Build.0 = Release|x86
+		{D93F0B73-7368-4311-9326-CF25E135D996}.Release|x86.ActiveCfg = Release|x86
+		{D93F0B73-7368-4311-9326-CF25E135D996}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = nJocLogic.vsmdi
+	EndGlobalSection
+EndGlobal

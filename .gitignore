@@ -1,0 +1,45 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/nJoc/nJocLogic/packages
+
+#ignore thumbnails created by windows
+Thumbs.db
+#Ignore short-cuts
+*.lnk
+#Ignore files build by Visual Studio
+*.obj
+*.pdb
+*.user
+*.vspscc
+*.vssscc
+*.vsprops
+*.scc
+*.ccscc
+*.suo
+*.ncb
+*.suo
+*.bak
+*.cache
+*.log
+[Bb]in
+[Dd]ebug/
+*.InstallLog
+*.tmp
+*.sdf
+*.*~
+obj/
+[Rr]elease/
+_ReSharper*/
+[Tt]est[Rr]esult*
+*.orig
+*.swp
+*.vsmdi
+
+# Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
+bin
+obj
+
+*.sln.DotSettings
+*.stackdump

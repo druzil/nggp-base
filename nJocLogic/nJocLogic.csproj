@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{72815ABC-166F-43BF-B7FA-8B2E10816A1D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>nJocLogic</RootNamespace>
+    <AssemblyName>nJocLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\GGPBot\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>ExtendedDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Server|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Server\</OutputPath>
+    <DefineConstants>CODE_ANALYSIS;DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>ExtendedDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C5, Version=2.2.5073.27396, Culture=neutral, PublicKeyToken=282361b99ded7e8e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\GGPBot\packages\C5.2.2.5073.27396\lib\portable-net40+sl50+wp80+win\C5.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=2.1.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\GGPBot\packages\NLog.2.1.0\lib\net40\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="PowerCollections, Version=1.0.2141.24679, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\XAct.Wintellect.PowerCollections.0.0.1\lib\net20\PowerCollections.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\..\GGPBot\packages\Microsoft.Bcl.Immutable.1.0.34\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="gameContainer\GameContainer.cs" />
+    <Compile Include="game\FactCombinationIterator.cs" />
+    <Compile Include="game\GameManager.cs" />
+    <Compile Include="game\Gamer.cs" />
+    <Compile Include="game\IGamer.cs" />
+    <Compile Include="game\IGamerFactory.cs" />
+    <Compile Include="game\IStoppable.cs" />
+    <Compile Include="game\ReasoningEntity.cs" />
+    <Compile Include="gdl\GdlAtom.cs" />
+    <Compile Include="gdl\GdlExpression.cs" />
+    <Compile Include="gdl\GdlList.cs" />
+    <Compile Include="gdl\GdlVariable.cs" />
+    <Compile Include="gdl\Lexer.cs" />
+    <Compile Include="gdl\Parser.cs" />
+    <Compile Include="gdl\SymbolTable.cs" />
+    <Compile Include="knowledge\FactProcessor.cs" />
+    <Compile Include="knowledge\GameInformation.cs" />
+    <Compile Include="knowledge\KnowledgeBase.cs" />
+    <Compile Include="knowledge\MetaGdl.cs" />
+    <Compile Include="knowledge\RelationInfo.cs" />
+    <Compile Include="knowledge\RelationNameProcessor.cs" />
+    <Compile Include="network\ConnectionManager.cs" />
+    <Compile Include="network\RequestHandler.cs" />
+    <Compile Include="network\RequestHandlerFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="data\Conjunction.cs" />
+    <Compile Include="data\Substitution.cs" />
+    <Compile Include="data\Disjunction.cs" />
+    <Compile Include="data\Fact.cs" />
+    <Compile Include="data\GroundFact.cs" />
+    <Compile Include="data\Implication.cs" />
+    <Compile Include="data\Negation.cs" />
+    <Compile Include="data\TermFunction.cs" />
+    <Compile Include="data\TermObject.cs" />
+    <Compile Include="data\TermVariable.cs" />
+    <Compile Include="data\Expression.cs" />
+    <Compile Include="data\Term.cs" />
+    <Compile Include="propNet\architecture\backComponents\BackComponent.cs" />
+    <Compile Include="propNet\architecture\backComponents\BackComponentFactory.cs" />
+    <Compile Include="propNet\architecture\Component.cs" />
+    <Compile Include="propNet\architecture\backComponents\And.cs" />
+    <Compile Include="propNet\architecture\backComponents\Constant.cs" />
+    <Compile Include="propNet\architecture\backComponents\Not.cs" />
+    <Compile Include="propNet\architecture\backComponents\Or.cs" />
+    <Compile Include="propNet\architecture\backComponents\BackProposition.cs" />
+    <Compile Include="propNet\architecture\backComponents\Transition.cs" />
+    <Compile Include="propNet\architecture\forwardComponents\And.cs" />
+    <Compile Include="propNet\architecture\forwardComponents\ForwardComponent.cs" />
+    <Compile Include="propNet\architecture\forwardComponents\Constant.cs" />
+    <Compile Include="propNet\architecture\forwardComponents\ForwardComponentFactory.cs" />
+    <Compile Include="propNet\architecture\forwardComponents\Not.cs" />
+    <Compile Include="propNet\architecture\forwardComponents\Or.cs" />
+    <Compile Include="propNet\architecture\forwardComponents\ForwardProposition.cs" />
+    <Compile Include="propNet\architecture\forwardComponents\Transition.cs" />
+    <Compile Include="propNet\architecture\IComponent.cs" />
+    <Compile Include="propNet\architecture\IComponentFactory.cs" />
+    <Compile Include="propNet\architecture\IProposition.cs" />
+    <Compile Include="propNet\architecture\PropNet.cs" />
+    <Compile Include="propNet\factory\converter\PropNetConverter.cs" />
+    <Compile Include="propNet\factory\flattener\Assignment.cs" />
+    <Compile Include="propNet\factory\flattener\Assignments.cs" />
+    <Compile Include="propNet\factory\flattener\PropNetFlattener.cs" />
+    <Compile Include="propNet\factory\flattener\RuleReference.cs" />
+    <Compile Include="propNet\factory\PropNetFactory.cs" />
+    <Compile Include="propNet\factory\PropNetFactoryUtils.cs" />
+    <Compile Include="propNet\factory\SentenceFormAdder.cs" />
+    <Compile Include="reasoner\AimaProver\AimaProver.cs" />
+    <Compile Include="reasoner\AimaProver\DistinctAndNotMover.cs" />
+    <Compile Include="reasoner\AimaProver\KnowledgeBase.cs" />
+    <Compile Include="reasoner\AimaProver\ProverCache.cs" />
+    <Compile Include="reasoner\AimaProver\Substituter.cs" />
+    <Compile Include="reasoner\AimaProver\Substitution.cs" />
+    <Compile Include="reasoner\AimaProver\Unifier.cs" />
+    <Compile Include="reasoner\AimaProver\VariableRenamer.cs" />
+    <Compile Include="statemachine\ICountableInputs.cs" />
+    <Compile Include="statemachine\IPropInitialiser.cs" />
+    <Compile Include="statemachine\IPropNetStateMachine.cs" />
+    <None Include="util\gdl\CommonTransforms.cs1" />
+    <Compile Include="util\AtomicBoolean.cs" />
+    <Compile Include="util\gdl\DeORer.cs" />
+    <Compile Include="util\gdl\GdlCleaner\DistinctSorter.cs" />
+    <Compile Include="util\gdl\GdlCleaner\ExtraBracketRemover.cs" />
+    <Compile Include="util\gdl\GdlCleaner\GdlCleaner.cs" />
+    <Compile Include="util\gdl\GdlCleaner\NotDistinctLiteralRemover.cs" />
+    <Compile Include="util\gdl\GdlCleaner\OldBaseSentenceRemover.cs" />
+    <Compile Include="util\gdl\GdlCleaner\ZeroElementBodyRemover.cs" />
+    <Compile Include="util\gdl\GdlVisitor.cs" />
+    <Compile Include="util\gdl\GdlVisitors.cs" />
+    <Compile Include="util\gdl\model\AbstractSentenceForm.cs" />
+    <Compile Include="util\gdl\model\assignments\FunctionInfo.cs" />
+    <Compile Include="util\gdl\model\assignments\TermObjectSubstitution.cs" />
+    <Compile Include="util\gdl\model\ImmutableSentenceFormModel.cs" />
+    <Compile Include="util\gdl\model\ISentenceFormModel.cs" />
+    <Compile Include="util\gdl\model\ISentenceForm.cs" />
+    <Compile Include="util\gdl\model\SentenceFormModelFactory.cs" />
+    <Compile Include="util\gdl\model\SentenceFormsFinder.cs" />
+    <Compile Include="util\gdl\model\SimpleSentenceForm.cs" />
+    <Compile Include="util\gdl\VariableConstrainer.cs" />
+    <Compile Include="util\ISocketFacade.cs" />
+    <Compile Include="util\JavaHashSet.cs" />
+    <Compile Include="util\Pair.cs" />
+    <Compile Include="util\SocketWrapper.cs" />
+    <Compile Include="util\StringSocket.cs" />
+    <Compile Include="util\Util.cs" />
+    <None Include="packages.config" />
+    <Compile Include="data\Unifier.cs" />
+    <Compile Include="data\VariableFact.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="util\gdl\model\ImmutableSentenceDomainModel.cs" />
+    <Compile Include="util\gdl\model\AbstractSentenceDomainModel.cs" />
+    <Compile Include="util\gdl\model\ISentenceDomainModel.cs" />
+    <Compile Include="util\gdl\model\ISentenceFormDomain.cs" />
+    <Compile Include="util\gdl\model\CartesianSentenceFormDomain.cs" />
+    <Compile Include="util\gdl\model\DependencyGraphs.cs" />
+    <Compile Include="util\gdl\model\SentenceForms.cs" />
+    <Compile Include="propNet\factory\OptimizingPropNetFactory.cs" />
+    <Content Include="propNet\Mapping.txt" />
+    <Compile Include="util\gdl\Relationizer.cs" />
+    <Compile Include="util\gdl\transforms\ImmutableConstantChecker.cs" />
+    <Compile Include="util\gdl\model\assignments\AssignmentsFactory.cs" />
+    <Compile Include="util\gdl\model\assignments\AssignmentsImpl.cs" />
+    <Compile Include="util\gdl\model\assignments\IterationOrderCandidate.cs" />
+    <Compile Include="util\gdl\model\assignments\FunctionInfoImpl.cs" />
+    <Compile Include="util\gdl\model\assignments\AssignmentFunction.cs" />
+    <Compile Include="util\gdl\model\assignments\AssignmentIteratorImpl.cs" />
+    <Compile Include="util\gdl\model\assignments\AssignmentIterator.cs" />
+    <Compile Include="util\gdl\model\assignments\AssignmentIterationPlan.cs" />
+    <Compile Include="util\gdl\CondensationIsolator.cs" />
+    <Compile Include="util\gdl\model\SentenceDomainModelFactory.cs" />
+    <Compile Include="util\gdl\model\SentenceDomainModelOptimizer.cs" />
+    <Compile Include="util\gdl\model\SentenceDomainModels.cs" />
+    <Compile Include="util\gdl\ConstantChecker.cs" />
+    <Compile Include="util\gdl\ConstantCheckerFactory.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
