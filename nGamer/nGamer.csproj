@@ -69,6 +69,8 @@
     <Compile Include="network\StopRequestHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropnetGamer.cs" />
+    <Compile Include="RandomGamer.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\nJocLogic\nJocLogic.csproj">

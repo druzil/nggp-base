@@ -95,18 +95,16 @@ namespace nGamer
         }
 
         static IGamerFactory GetGamerFactory()
-        {          
-            return new GenericGamerFactory<MinimaxGamer>();
+        {
+            //return new GenericGamerFactory<PropnetGamer>();
+            //return new GenericGamerFactory<MinimaxGamer>();
+            return new GenericGamerFactory<RandomGamer>();
         }
 
         static void RunTest(string[] args)
         {
-            //Main.setupLoggerProperties();
-
             IGamerFactory factory = GetGamerFactory();
             GameManager.SetGamerFactory(factory);
-
-            //String logFile;
 
             TextReader input = Console.In;
 
@@ -115,13 +113,8 @@ namespace nGamer
 
             string kif = args[0];
             string role = args[1];
-            //logFile = args[2];
             int startClock = int.Parse(args[3]);    //=100
             int playClock = int.Parse(args[4]);     //=60
-
-            // Set up debug file
-            //PrintStream debugStream = new PrintStream(logFile);
-            //GameManager.debugStream_ = debugStream;
 
             var tester = new GameTester(kif, role, startClock, playClock);
 

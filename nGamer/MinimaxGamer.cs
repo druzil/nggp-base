@@ -80,14 +80,14 @@ namespace nGamer
 
             Term action = searchResult.first;
 
-            string explanation = getExplanation(searchResult);
+            string explanation = GetExplanation(searchResult);
 
             const string taunt = "is good move"; // getTaunt(searchResult.second);
 
             return new Tuple<Term, string, string>(action, explanation, taunt);
         }
 
-        private String getExplanation(Pair<Term, int> searchResult)
+        private static String GetExplanation(Pair<Term, int> searchResult)
         {
             if (searchResult.second >= 0)
                 return "Minimax score is " + searchResult.second;
@@ -203,8 +203,7 @@ namespace nGamer
             return new Pair<Term, int>(bestMove, bestScore);
         }
 
-        private int GetScore(HashSet<Fact> context, GroundFact[] moves,
-                             int currentDepth)
+        private int GetScore(HashSet<Fact> context, GroundFact[] moves, int currentDepth)
         {
             // Create a new state, based on state and context
 

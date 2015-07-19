@@ -43,7 +43,7 @@ namespace nJocLogic.game
             TrueProcessor = new RelationNameProcessor(Parser.TokTrue);
         }
 
-        public void InitializeGame(TermObject assignedRole, int playClock, GameInformation gameInformation)
+        public virtual void InitializeGame(TermObject assignedRole, int playClock, GameInformation gameInformation)
         {
             MyRole = assignedRole;
             MyRoleStr = assignedRole.ToString();
